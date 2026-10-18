@@ -1,0 +1,14 @@
+SAMPLE INVOICE — SYNTHETIC DATA ONLY
+
+Invoice Number: INV-2026-104
+Invoice Date: 12/09/2026
+Supplier: BrightPath Technologies Pvt Ltd
+Bill To: Arrowstack Training Team
+Contact: billing@brightpath.example
+Description: AI document processing prototype
+Subtotal: INR 12,500.00
+Tax: INR 2,250.00
+Amount Due: INR 14,750.00
+Payment Due Date: 30/09/2026
+
+Notes: This synthetic invoice was created only for testing a document understanding prototype.

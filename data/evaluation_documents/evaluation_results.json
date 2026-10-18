@@ -1,0 +1,654 @@
+{
+  "dataset": "Arrowstack Project 2 Synthetic Evaluation Dataset",
+  "documents": {
+    "sample_invoice.txt": {
+      "baseline": {
+        "document_type": {
+          "expected": "Invoice / billing document",
+          "predicted": "Invoice / billing document",
+          "correct": true
+        },
+        "entities": {
+          "precision": 0.5833,
+          "recall": 0.875,
+          "f1": 0.7,
+          "true_positives": 7,
+          "false_positives": 5,
+          "false_negatives": 1,
+          "entity_details": {
+            "people": {
+              "expected": [],
+              "predicted": [
+                "arrowstack training",
+                "ltd bill",
+                "payment due",
+                "team contact",
+                "technologies pvt"
+              ],
+              "correct": [],
+              "missing": [],
+              "extra": [
+                "arrowstack training",
+                "ltd bill",
+                "payment due",
+                "team contact",
+                "technologies pvt"
+              ]
+            },
+            "organizations": {
+              "expected": [
+                "arrowstack training team",
+                "brightpath technologies pvt ltd"
+              ],
+              "predicted": [
+                "brightpath technologies pvt ltd"
+              ],
+              "correct": [
+                "brightpath technologies pvt ltd"
+              ],
+              "missing": [
+                "arrowstack training team"
+              ],
+              "extra": []
+            },
+            "dates": {
+              "expected": [
+                "12/09/2026",
+                "30/09/2026"
+              ],
+              "predicted": [
+                "12/09/2026",
+                "30/09/2026"
+              ],
+              "correct": [
+                "12/09/2026",
+                "30/09/2026"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "emails": {
+              "expected": [
+                "billing@brightpath.example"
+              ],
+              "predicted": [
+                "billing@brightpath.example"
+              ],
+              "correct": [
+                "billing@brightpath.example"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "amounts": {
+              "expected": [
+                "inr 12,500.00",
+                "inr 14,750.00",
+                "inr 2,250.00"
+              ],
+              "predicted": [
+                "inr 12,500.00",
+                "inr 14,750.00",
+                "inr 2,250.00"
+              ],
+              "correct": [
+                "inr 12,500.00",
+                "inr 14,750.00",
+                "inr 2,250.00"
+              ],
+              "missing": [],
+              "extra": []
+            }
+          }
+        },
+        "summary": {
+          "key_facts_found": [
+            "invoice",
+            "BrightPath Technologies Pvt Ltd",
+            "INR 14,750.00",
+            "30/09/2026"
+          ],
+          "key_facts_missing": [],
+          "key_fact_coverage": 1.0,
+          "note": "This is a simple text-match measure, not a complete assessment of summary quality. Paraphrased facts require human review."
+        },
+        "schema_valid": true,
+        "review_required": false
+      },
+      "local_ai": {
+        "document_type": {
+          "expected": "Invoice / billing document",
+          "predicted": "Invoice / billing document",
+          "correct": true
+        },
+        "entities": {
+          "precision": 0.7778,
+          "recall": 0.875,
+          "f1": 0.8235,
+          "true_positives": 7,
+          "false_positives": 2,
+          "false_negatives": 1,
+          "entity_details": {
+            "people": {
+              "expected": [],
+              "predicted": [
+                "arrowstack training team",
+                "brightpath technologies pvt ltd"
+              ],
+              "correct": [],
+              "missing": [],
+              "extra": [
+                "arrowstack training team",
+                "brightpath technologies pvt ltd"
+              ]
+            },
+            "organizations": {
+              "expected": [
+                "arrowstack training team",
+                "brightpath technologies pvt ltd"
+              ],
+              "predicted": [
+                "brightpath technologies pvt ltd"
+              ],
+              "correct": [
+                "brightpath technologies pvt ltd"
+              ],
+              "missing": [
+                "arrowstack training team"
+              ],
+              "extra": []
+            },
+            "dates": {
+              "expected": [
+                "12/09/2026",
+                "30/09/2026"
+              ],
+              "predicted": [
+                "12/09/2026",
+                "30/09/2026"
+              ],
+              "correct": [
+                "12/09/2026",
+                "30/09/2026"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "emails": {
+              "expected": [
+                "billing@brightpath.example"
+              ],
+              "predicted": [
+                "billing@brightpath.example"
+              ],
+              "correct": [
+                "billing@brightpath.example"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "amounts": {
+              "expected": [
+                "inr 12,500.00",
+                "inr 14,750.00",
+                "inr 2,250.00"
+              ],
+              "predicted": [
+                "inr 12,500.00",
+                "inr 14,750.00",
+                "inr 2,250.00"
+              ],
+              "correct": [
+                "inr 12,500.00",
+                "inr 14,750.00",
+                "inr 2,250.00"
+              ],
+              "missing": [],
+              "extra": []
+            }
+          }
+        },
+        "summary": {
+          "key_facts_found": [
+            "invoice"
+          ],
+          "key_facts_missing": [
+            "BrightPath Technologies Pvt Ltd",
+            "INR 14,750.00",
+            "30/09/2026"
+          ],
+          "key_fact_coverage": 0.25,
+          "note": "This is a simple text-match measure, not a complete assessment of summary quality. Paraphrased facts require human review."
+        },
+        "schema_valid": true,
+        "review_required": true
+      }
+    },
+    "sample_business_report.txt": {
+      "baseline": {
+        "document_type": {
+          "expected": "Business report",
+          "predicted": "Business report",
+          "correct": true
+        },
+        "entities": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667,
+          "true_positives": 5,
+          "false_positives": 5,
+          "false_negatives": 0,
+          "entity_details": {
+            "people": {
+              "expected": [
+                "maya shah"
+              ],
+              "predicted": [
+                "ltd report",
+                "maya shah",
+                "northstar analytics",
+                "report title",
+                "september operations",
+                "summary organization"
+              ],
+              "correct": [
+                "maya shah"
+              ],
+              "missing": [],
+              "extra": [
+                "ltd report",
+                "northstar analytics",
+                "report title",
+                "september operations",
+                "summary organization"
+              ]
+            },
+            "organizations": {
+              "expected": [
+                "northstar analytics ltd"
+              ],
+              "predicted": [
+                "northstar analytics ltd"
+              ],
+              "correct": [
+                "northstar analytics ltd"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "dates": {
+              "expected": [
+                "05/10/2026"
+              ],
+              "predicted": [
+                "05/10/2026"
+              ],
+              "correct": [
+                "05/10/2026"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "emails": {
+              "expected": [
+                "maya.shah@northstar.example"
+              ],
+              "predicted": [
+                "maya.shah@northstar.example"
+              ],
+              "correct": [
+                "maya.shah@northstar.example"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "amounts": {
+              "expected": [
+                "inr 85,000.00"
+              ],
+              "predicted": [
+                "inr 85,000.00"
+              ],
+              "correct": [
+                "inr 85,000.00"
+              ],
+              "missing": [],
+              "extra": []
+            }
+          }
+        },
+        "summary": {
+          "key_facts_found": [
+            "1,240 support requests",
+            "1,115 requests",
+            "INR 85,000.00",
+            "September 2026"
+          ],
+          "key_facts_missing": [],
+          "key_fact_coverage": 1.0,
+          "note": "This is a simple text-match measure, not a complete assessment of summary quality. Paraphrased facts require human review."
+        },
+        "schema_valid": true,
+        "review_required": false
+      },
+      "local_ai": {
+        "document_type": {
+          "expected": "Business report",
+          "predicted": "Business report",
+          "correct": true
+        },
+        "entities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 5,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "entity_details": {
+            "people": {
+              "expected": [
+                "maya shah"
+              ],
+              "predicted": [
+                "maya shah"
+              ],
+              "correct": [
+                "maya shah"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "organizations": {
+              "expected": [
+                "northstar analytics ltd"
+              ],
+              "predicted": [
+                "northstar analytics ltd"
+              ],
+              "correct": [
+                "northstar analytics ltd"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "dates": {
+              "expected": [
+                "05/10/2026"
+              ],
+              "predicted": [
+                "05/10/2026"
+              ],
+              "correct": [
+                "05/10/2026"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "emails": {
+              "expected": [
+                "maya.shah@northstar.example"
+              ],
+              "predicted": [
+                "maya.shah@northstar.example"
+              ],
+              "correct": [
+                "maya.shah@northstar.example"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "amounts": {
+              "expected": [
+                "inr 85,000.00"
+              ],
+              "predicted": [
+                "inr 85,000.00"
+              ],
+              "correct": [
+                "inr 85,000.00"
+              ],
+              "missing": [],
+              "extra": []
+            }
+          }
+        },
+        "summary": {
+          "key_facts_found": [
+            "September 2026"
+          ],
+          "key_facts_missing": [
+            "1,240 support requests",
+            "1,115 requests",
+            "INR 85,000.00"
+          ],
+          "key_fact_coverage": 0.25,
+          "note": "This is a simple text-match measure, not a complete assessment of summary quality. Paraphrased facts require human review."
+        },
+        "schema_valid": true,
+        "review_required": true
+      }
+    },
+    "sample_service_agreement.txt": {
+      "baseline": {
+        "document_type": {
+          "expected": "Contract / agreement",
+          "predicted": "Contract / agreement",
+          "correct": true
+        },
+        "entities": {
+          "precision": 0.6364,
+          "recall": 1.0,
+          "f1": 0.7778,
+          "true_positives": 7,
+          "false_positives": 4,
+          "false_negatives": 0,
+          "entity_details": {
+            "people": {
+              "expected": [
+                "aisha khan"
+              ],
+              "predicted": [
+                "agreement date",
+                "aisha khan",
+                "customer representative",
+                "foundation service",
+                "greenfield learning"
+              ],
+              "correct": [
+                "aisha khan"
+              ],
+              "missing": [],
+              "extra": [
+                "agreement date",
+                "customer representative",
+                "foundation service",
+                "greenfield learning"
+              ]
+            },
+            "organizations": {
+              "expected": [
+                "bluepeak systems llp",
+                "greenfield learning foundation"
+              ],
+              "predicted": [
+                "bluepeak systems llp",
+                "greenfield learning foundation"
+              ],
+              "correct": [
+                "bluepeak systems llp",
+                "greenfield learning foundation"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "dates": {
+              "expected": [
+                "01/10/2026",
+                "31/03/2027"
+              ],
+              "predicted": [
+                "01/10/2026",
+                "31/03/2027"
+              ],
+              "correct": [
+                "01/10/2026",
+                "31/03/2027"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "emails": {
+              "expected": [
+                "contracts@bluepeak.example"
+              ],
+              "predicted": [
+                "contracts@bluepeak.example"
+              ],
+              "correct": [
+                "contracts@bluepeak.example"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "amounts": {
+              "expected": [
+                "inr 60,000.00"
+              ],
+              "predicted": [
+                "inr 60,000.00"
+              ],
+              "correct": [
+                "inr 60,000.00"
+              ],
+              "missing": [],
+              "extra": []
+            }
+          }
+        },
+        "summary": {
+          "key_facts_found": [
+            "service agreement",
+            "BluePeak Systems LLP",
+            "Greenfield Learning Foundation",
+            "INR 60,000.00 per month",
+            "31/03/2027"
+          ],
+          "key_facts_missing": [],
+          "key_fact_coverage": 1.0,
+          "note": "This is a simple text-match measure, not a complete assessment of summary quality. Paraphrased facts require human review."
+        },
+        "schema_valid": true,
+        "review_required": false
+      },
+      "local_ai": {
+        "document_type": {
+          "expected": "Contract / agreement",
+          "predicted": "Contract / agreement",
+          "correct": true
+        },
+        "entities": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "true_positives": 7,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "entity_details": {
+            "people": {
+              "expected": [
+                "aisha khan"
+              ],
+              "predicted": [
+                "aisha khan"
+              ],
+              "correct": [
+                "aisha khan"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "organizations": {
+              "expected": [
+                "bluepeak systems llp",
+                "greenfield learning foundation"
+              ],
+              "predicted": [
+                "bluepeak systems llp",
+                "greenfield learning foundation"
+              ],
+              "correct": [
+                "bluepeak systems llp",
+                "greenfield learning foundation"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "dates": {
+              "expected": [
+                "01/10/2026",
+                "31/03/2027"
+              ],
+              "predicted": [
+                "01/10/2026",
+                "31/03/2027"
+              ],
+              "correct": [
+                "01/10/2026",
+                "31/03/2027"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "emails": {
+              "expected": [
+                "contracts@bluepeak.example"
+              ],
+              "predicted": [
+                "contracts@bluepeak.example"
+              ],
+              "correct": [
+                "contracts@bluepeak.example"
+              ],
+              "missing": [],
+              "extra": []
+            },
+            "amounts": {
+              "expected": [
+                "inr 60,000.00"
+              ],
+              "predicted": [
+                "inr 60,000.00"
+              ],
+              "correct": [
+                "inr 60,000.00"
+              ],
+              "missing": [],
+              "extra": []
+            }
+          }
+        },
+        "summary": {
+          "key_facts_found": [
+            "service agreement",
+            "BluePeak Systems LLP",
+            "Greenfield Learning Foundation"
+          ],
+          "key_facts_missing": [
+            "INR 60,000.00 per month",
+            "31/03/2027"
+          ],
+          "key_fact_coverage": 0.6,
+          "note": "This is a simple text-match measure, not a complete assessment of summary quality. Paraphrased facts require human review."
+        },
+        "schema_valid": true,
+        "review_required": true
+      }
+    }
+  },
+  "notes": [
+    "Synthetic evaluation dataset.",
+    "Entity scores use case-insensitive exact string matching.",
+    "Summary key-fact coverage is a simple text-match measure.",
+    "Review errors and paraphrases manually before drawing conclusions."
+  ]
+}

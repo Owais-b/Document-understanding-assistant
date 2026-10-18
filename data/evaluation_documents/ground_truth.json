@@ -1,0 +1,97 @@
+{
+  "dataset_name": "Arrowstack Project 2 Synthetic Evaluation Dataset",
+  "purpose": "Small controlled evaluation set for baseline-versus-local-AI document understanding.",
+  "notes": [
+    "All documents are synthetic and intended for testing only.",
+    "Ground truth is manually defined; review it before reporting final metrics.",
+    "Compare normalized entity values, document type, and summary quality. Schema validity alone is not accuracy."
+  ],
+  "documents": [
+    {
+      "file": "sample_invoice.txt",
+      "document_type": "Invoice / billing document",
+      "entities": {
+        "people": [],
+        "organizations": [
+          "BrightPath Technologies Pvt Ltd",
+          "Arrowstack Training Team"
+        ],
+        "dates": [
+          "12/09/2026",
+          "30/09/2026"
+        ],
+        "emails": [
+          "billing@brightpath.example"
+        ],
+        "amounts": [
+          "INR 12,500.00",
+          "INR 2,250.00",
+          "INR 14,750.00"
+        ]
+      },
+      "summary_key_facts": [
+        "invoice",
+        "BrightPath Technologies Pvt Ltd",
+        "INR 14,750.00",
+        "30/09/2026"
+      ]
+    },
+    {
+      "file": "sample_business_report.txt",
+      "document_type": "Business report",
+      "entities": {
+        "people": [
+          "Maya Shah"
+        ],
+        "organizations": [
+          "Northstar Analytics Ltd"
+        ],
+        "dates": [
+          "05/10/2026"
+        ],
+        "emails": [
+          "maya.shah@northstar.example"
+        ],
+        "amounts": [
+          "INR 85,000.00"
+        ]
+      },
+      "summary_key_facts": [
+        "1,240 support requests",
+        "1,115 requests",
+        "INR 85,000.00",
+        "September 2026"
+      ]
+    },
+    {
+      "file": "sample_service_agreement.txt",
+      "document_type": "Contract / agreement",
+      "entities": {
+        "people": [
+          "Aisha Khan"
+        ],
+        "organizations": [
+          "Greenfield Learning Foundation",
+          "BluePeak Systems LLP"
+        ],
+        "dates": [
+          "01/10/2026",
+          "31/03/2027"
+        ],
+        "emails": [
+          "contracts@bluepeak.example"
+        ],
+        "amounts": [
+          "INR 60,000.00"
+        ]
+      },
+      "summary_key_facts": [
+        "service agreement",
+        "BluePeak Systems LLP",
+        "Greenfield Learning Foundation",
+        "INR 60,000.00 per month",
+        "31/03/2027"
+      ]
+    }
+  ]
+}

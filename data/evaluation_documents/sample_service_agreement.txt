@@ -1,0 +1,14 @@
+SAMPLE SERVICE AGREEMENT — SYNTHETIC DATA ONLY
+
+Agreement Date: 01/10/2026
+Customer: Greenfield Learning Foundation
+Service Provider: BluePeak Systems LLP
+Contact: contracts@bluepeak.example
+Customer Representative: Aisha Khan
+
+The service provider will maintain the customer's document processing system.
+The agreement begins on 01/10/2026 and ends on 31/03/2027.
+The service fee is INR 60,000.00 per month.
+Both parties must review service performance every three months.
+
+This synthetic agreement was created only for testing a document understanding prototype.

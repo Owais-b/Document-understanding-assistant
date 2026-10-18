@@ -1,0 +1,14 @@
+SAMPLE BUSINESS REPORT — SYNTHETIC DATA ONLY
+
+Report Title: September Operations Summary
+Organization: Northstar Analytics Ltd
+Report Date: 05/10/2026
+Prepared By: Maya Shah
+Contact: maya.shah@northstar.example
+
+The operations team processed 1,240 support requests during September 2026.
+The team resolved 1,115 requests within the target time.
+Operating expenses were INR 85,000.00.
+The report recommends improving ticket routing and monitoring response times.
+
+This synthetic report was created only for testing a document understanding prototype.
